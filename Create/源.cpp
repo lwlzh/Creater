@@ -4,46 +4,14 @@
 #include<string>
 #include<cstdlib>
 #include<ctime>
+#include"Doc.h"
 
 #define INF 1000
 using namespace std;
+
 int n = 0;
 bool use[INF];
-class doc {
-private:
-	string en, ch;
-//	doc* next;
-public:
-	doc()
-	{
-	//	zh = a;
-	//	ch = b;
-	//	next = NULL;
-	}
-	void setEn(char * x)
-	{
-		en = x;
-	}
-	void setCh(char *x)
-	{
-		ch = x;
-	}
-	void out(int x)
-	{
-		if(x)cout <<en<<"   "<<"____"<<endl;
-		else cout << "____" << "   " << ch << endl;
-	}
-	string getEn()
-	{
-		return en;
-	}
-	string getCh()
-	{
-		return ch;
-	}
-	//static void 
-
-}head[INF];
+doc head[INF];
 int main()
 {
 	srand(time(NULL));

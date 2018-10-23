@@ -1,5 +1,11 @@
 #pragma once
+#include<string>
+#include<iostream>
+using namespace std;
+
 class doc {
+private:
+	string en, ch;
 public:
 	doc();
 	void setEn(char * x);
